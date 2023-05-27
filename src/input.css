@@ -9,7 +9,7 @@
 @layer components{
 
 	.header{
-		@apply relative bg-yellow-400;
+		@apply relative bg-transparent;
 	}
 
 	.header .nav2{
@@ -122,6 +122,13 @@
 		}
 	}
 
+	/* BANNER PAGE */
+
+	.banner{
+		@apply bg-mobile min-h-[45rem] bg-no-repeat bg-cover;
+	}
+
+	
 
 
 

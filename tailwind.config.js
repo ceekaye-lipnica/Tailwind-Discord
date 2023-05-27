@@ -14,6 +14,11 @@ module.exports = {
         dark:'#23272A',
         grey:'#f6f6f6',
       },
+
+      backgroundImage:{
+        'mobile': "url('./img/mobile-banner.svg')",
+        "desktop": "url('./img/banner-bg1.svg')"
+      },
     },
   },
   plugins: [],

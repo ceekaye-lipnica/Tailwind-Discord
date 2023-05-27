@@ -558,8 +558,7 @@ video {
 
 .header {
   position: relative;
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+  background-color: transparent;
 }
 
 .header .nav2 {
@@ -751,6 +750,15 @@ video {
     --tw-text-opacity: 1;
     color: rgb(35 39 42 / var(--tw-text-opacity));
   }
+}
+
+/* BANNER PAGE */
+
+.banner {
+  min-height: 45rem;
+  background-image: url('./img/mobile-banner.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .font-sans {
