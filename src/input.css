@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+	@apply max-w-[140rem] mx-auto p-[1.5rem];
+}
+
+@layer components{
+
+	.header{
+		@apply relative bg-yellow-400;
+	}
+
+	.header .nav2{
+		@apply hidden;
+	}
+
+	.header .nav2-btn{
+		@apply hidden;
+	}
+
+	.header .header__wrapper{
+		@apply flex justify-between items-center;
+	}
+
+	.header .nav1{
+		@apply absolute top-0 right-[100rem] w-[65%] h-[100vh] rounded-tl-[.5rem] rounded-bl-[.5rem] bg-light overflow-hidden 
+	}
+
+	.header .nav1.open{
+		@apply right-0;
+	}
+
+	.header .nav1 ul{
+		@apply pl-[1rem];
+	}
+
+	.header .nav1 ul li{
+		@apply py-[.5rem] pl-[1rem] hover:underline w-[15rem] rounded-[.5rem];
+	}
+
+	.header .nav1 ul li:first-child{
+		@apply text-blue-400 bg-grey  mt-[1rem]
+	}
+
+	.header .nav1 ul li a i{
+		@apply text-[.8rem] items-center text-gray-600 pl-[.5rem];
+	}
+
+	.header .nav1-logo{
+		@apply border-solid border-b border-grey mx-[1.5rem];
+	}
+
+	.header .nav1-logo img{
+		@apply py-[1.5rem]
+	}
+
+	.header .nav1-btn{
+	@apply flex justify-center mt-[7rem];
+	}
+
+	.header .nav1-btn a{
+	@apply text-light text-center text-[.9rem] bg-porpol px-[1rem] py-[.5rem] w-full mx-[1.5rem] rounded-full;
+	}
+
+	.header .nav1-btn a i{
+	@apply pr-[.3rem]
+	}
+
+	.toggle__menu {
+		@apply  z-[1]  rounded-full;
+	}
+
+	.toggle__menu span {
+		@apply w-[1.7rem] h-[.32rem] bg-light block;
+	}
+
+	.toggle__menu span:nth-child(2){
+		@apply my-[.25rem];
+	}
+
+	.toggle__menu.open span:first-child {
+		@apply translate-x-0 translate-y-[7px] rotate-[225deg]  w-[1rem] h-[.15rem] bg-dark;
+	}
+
+	.toggle__menu.open span:nth-child(2) {
+		@apply opacity-0;
+	}
+	.toggle__menu.open span:last-child {
+		@apply translate-x-0 translate-y-[-9px] rotate-[-225deg]  w-[1rem] h-[.15rem] bg-dark;
+	}
+
+	@media (min-width: 1024px) {
+
+		.header .nav1{
+			@apply hidden;
+		}
+
+		.header .toggle__menu{
+			@apply hidden;
+		}
+
+		.header .nav2{
+			@apply block;
+		}
+
+		.header .nav2-btn{
+			@apply block;
+		}
+
+		.header .nav2 ul{
+			@apply flex gap-[2rem];
+		}
+
+		.header .nav2 ul li{
+			@apply text-light font-bold text-[.9rem] ;
+		}
+
+		.header .nav2-btn{
+			@apply text-dark px-[1rem] py-[.5rem]  text-[.8rem]  bg-light rounded-full;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+}
