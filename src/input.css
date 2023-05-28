@@ -9,23 +9,23 @@
 @layer components{
 
 	.header{
-		@apply relative bg-transparent;
+		@apply relative bg-bayolet;
 	}
 
 	.header .nav2{
 		@apply hidden;
 	}
 
-	.header .nav2-btn{
+	/* .header .nav2-btn{
 		@apply hidden;
-	}
+	} */
 
 	.header .header__wrapper{
 		@apply flex justify-between items-center;
 	}
 
 	.header .nav1{
-		@apply absolute top-0 right-[100rem] w-[65%] h-[100vh] rounded-tl-[.5rem] rounded-bl-[.5rem] bg-light overflow-hidden 
+		@apply absolute top-0 right-[100rem] w-[65%] h-[100vh] rounded-tl-[.5rem] rounded-bl-[.5rem] bg-light overflow-hidden; 
 	}
 
 	.header .nav1.open{
@@ -61,15 +61,23 @@
 	}
 
 	.header .nav1-btn a{
-	@apply text-light text-center text-[.9rem] bg-porpol px-[1rem] py-[.5rem] w-full mx-[1.5rem] rounded-full;
+	@apply text-light text-center text-[.9rem] bg-porpol px-[1rem] py-[.5rem] w-full mx-[1.5rem] rounded-full hover:shadow-md hover:bg-opacity-80;
 	}
 
 	.header .nav1-btn a i{
 	@apply pr-[.3rem]
 	}
 
+	.header .nav2-btn{
+		@apply text-dark px-[1rem] py-[.5rem]  text-[.8rem]  bg-light rounded-full hover:shadow-md;
+	}
+
+	.header .side{
+		@apply flex items-center gap-[1.5rem];
+	}
+
 	.toggle__menu {
-		@apply  z-[1]  rounded-full;
+		@apply  z-[1] rounded-full;
 	}
 
 	.toggle__menu span {
@@ -81,7 +89,7 @@
 	}
 
 	.toggle__menu.open span:first-child {
-		@apply translate-x-0 translate-y-[7px] rotate-[225deg]  w-[1rem] h-[.15rem] bg-dark;
+		@apply translate-x-0 translate-y-[6px] rotate-[225deg]  w-[1rem] h-[.15rem] bg-dark;
 	}
 
 	.toggle__menu.open span:nth-child(2) {
@@ -117,16 +125,84 @@
 			@apply text-light font-bold text-[.9rem] ;
 		}
 
-		.header .nav2-btn{
-			@apply text-dark px-[1rem] py-[.5rem]  text-[.8rem]  bg-light rounded-full;
-		}
+		
 	}
 
 	/* BANNER PAGE */
 
 	.banner{
-		@apply bg-mobile min-h-[45rem] bg-no-repeat bg-cover;
+		@apply bg-mobile bg-no-repeat bg-cover min-h-[34rem] bg-[center_top_-4rem];
 	}
+
+	.banner .banner-text h2{
+		@apply text-light font-bold text-[1.8rem]
+	}
+
+	.banner .banner-text p {
+		@apply text-light text-[.9rem] mt-[1.5rem]
+	}
+
+	.banner .banner-btn{
+		@apply flex flex-col gap-[1.5rem] mt-[1.5rem];
+	}
+
+	.banner .banner-btn .download{
+		@apply text-dark text-[1rem] font-bold px-[2rem] py-[1rem]  bg-light rounded-full w-fit hover:shadow-md hover:text-porpol;
+	}
+
+	.banner .banner-btn .download i{
+		@apply pr-[.5rem] text-[.9rem];
+	}
+
+	.banner .banner-btn .browser{
+		@apply text-light text-[1rem] font-bold px-[2rem] py-[1rem]  bg-dark rounded-full w-fit hover:shadow-md hover:bg-gray-700;
+	}
+
+	@media (min-width: 1024px) {
+		.banner{
+			@apply bg-desktop bg-no-repeat bg-cover;
+		}
+
+		.banner .banner-text h2{
+			@apply text-center font-extrabold text-[3.5rem] pt-[5rem];
+		}
+	
+		.banner .banner-text p {
+			@apply w-[45rem] mx-auto text-center text-[1.1rem] font-[100] mt-[1.5rem] leading-[1.8];
+		}
+	
+		.banner .banner-btn{
+			@apply flex flex-row justify-center  mt-[2rem];
+		}
+
+		.banner .banner-btn .download{
+			@apply text-[1.1rem] font-light;
+		}
+	
+		.banner .banner-btn .download i{
+			@apply text-[1.1rem];
+		}
+	
+		.banner .banner-btn .browser{
+			@apply text-[1.1rem] font-light;
+		}
+
+
+
+
+
+
+
+	}
+
+	
+
+
+	
+
+
+
+
 
 	
 

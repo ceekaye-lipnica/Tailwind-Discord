@@ -19,6 +19,10 @@ module.exports = {
         'mobile': "url('./img/mobile-banner.svg')",
         "desktop": "url('./img/banner-bg1.svg')"
       },
+
+      boxShadow:{
+        'md': '0 8px 15px rgba(0,0,0,.2);',
+      },
     },
   },
   plugins: [],
