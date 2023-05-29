@@ -33,11 +33,11 @@
 	}
 
 	.header .nav1{
-		@apply absolute z-[2] top-0 right-[100rem] w-[65%] h-[100vh] rounded-tl-[.5rem] rounded-bl-[.5rem] bg-light overflow-hidden; 
+		@apply absolute z-[2] top-0 right-[-100rem] w-[65%] h-[100vh] rounded-tl-[.5rem] rounded-bl-[.5rem] bg-light overflow-hidden; 
 	}
 
 	.header .nav1.open{
-		@apply right-0;
+		@apply right-0 transition-all;
 	}
 
 	.header .nav1 ul{
@@ -89,7 +89,7 @@
 	}
 
 	.toggle__menu span {
-		@apply w-[1.7rem] h-[.32rem] bg-light block;
+		@apply w-[1.7rem] h-[.32rem] bg-light block transition ease-in-out duration-[.5s];
 	}
 
 	.toggle__menu span:nth-child(2){
@@ -97,14 +97,14 @@
 	}
 
 	.toggle__menu.open span:first-child {
-		@apply translate-x-0 translate-y-[6px] rotate-[225deg]  w-[1rem] h-[.15rem] bg-dark;
+		@apply translate-x-0 translate-y-[6px] rotate-[225deg]  w-[1rem] h-[.15rem] bg-dark transition ease-in-out duration-[.5s];
 	}
 
 	.toggle__menu.open span:nth-child(2) {
-		@apply opacity-0;
+		@apply opacity-0 transition ease-in-out duration-[.5s];
 	}
 	.toggle__menu.open span:last-child {
-		@apply translate-x-0 translate-y-[-9px] rotate-[-225deg]  w-[1rem] h-[.15rem] bg-dark;
+		@apply translate-x-0 translate-y-[-9px] rotate-[-225deg]  w-[1rem] h-[.15rem] bg-dark transition ease-in-out duration-[.5s];
 	}
 
 	@media (min-width: 1024px) {
@@ -326,6 +326,7 @@
 	}
 
 
+	
 	/* LINKS PAGE */
 
 	.links{
